@@ -23,7 +23,7 @@ def scrape_basic(url):
         scraped_quotes.append({
             'text': text.get_text(strip=True) if text else None,
             'author': author.get_text(strip=True) if author else None,
-            'tags': tags.get_text(strip=True) if tag in tags
+            'tags': [tags.get_text(strip=True) if tag in tags]
         })
 
     return scraped_quotes
