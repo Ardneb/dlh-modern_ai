@@ -10,8 +10,8 @@ def scrape_basic(url):
     Fetch quotes website and scrape first page
     extracting the quote text, the author and tags
     """
-    response = requests.get(url)
-    soupobject = BeautifulSoup(response.text, 'html.parser')
+    html = fetch_html(url)                          # already a string
+    soupobject = BeautifulSoup(html, 'html.parser')
 
     scraped_quotes = []
     quote_blocks = soupobject.find_all('div', class_='quote')
