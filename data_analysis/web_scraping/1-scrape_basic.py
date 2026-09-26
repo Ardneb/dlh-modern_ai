@@ -14,14 +14,14 @@ def scrape_basic(url):
     soupobject = BeautifulSoup(response.text, 'html.parser')
 
     scraped_quotes = []
-    quote_blocks = soupobject.find_all('div', class='quote')
+    quote_blocks = soupobject.find_all('div', class_='quote')
     for block in quote_blocks:
         text = block.find('span', class_='text')
         author = block.find('small', class_='author')
         tags = block.find_all('a', class_='tag')
 
         scraped_quotes.append({
-            'quote': text.get_text(strip=True) if text else None,
+            'text': text.get_text(strip=True) if text else None,
             'author': author.get_text(strip=True) if author else None,
             'tags': tags.get_text(strip=True) if tag in tags
         })
