@@ -4,7 +4,7 @@
 import requests
 
 
-def fetch_html(url, headers = None, timeout = 10):
+def fetch_html(url, headers=None, timeout=10):
     """Fetch website from URL and return text"""
     response = requests.get(url)
     response.raise_for_status()
