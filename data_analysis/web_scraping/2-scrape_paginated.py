@@ -24,7 +24,7 @@ def scrape_paginated(base_url):
         soupobject = BeautifulSoup(html, 'html.parser')
 
         # Scrape quotes from the current page
-        quotes_on_page = scrape_basic(html)
+        quotes_on_page = scrape_basic(next_page_url)
         scraped_quotes.extend(quotes_on_page)
 
         # Find the "Next" link
