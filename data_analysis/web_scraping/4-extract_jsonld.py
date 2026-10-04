@@ -15,7 +15,7 @@ def extract_jsonld(url):
     embedded within JSON-LD blocks
     """
     html = fetch_html(url)
-    soup= BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser')
 
     quotes = []
 
@@ -30,7 +30,7 @@ def extract_jsonld(url):
                 text = item.get('text')
                 author = item.get('author', {}).get('name')
                 keywords = item.get('keywords', '')
-                tags = (keywords.split(',') 
+                tags = (keywords.split(',')
                         if isinstance(keywords, str) else keywords)
                 quotes.append({
                     'text': text,
