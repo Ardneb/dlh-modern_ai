@@ -8,3 +8,5 @@ Write a function def scrape_paginated(base_url): that follows “Next” links o
 Write a function def scrape_via_api(base_url): that fetches quote data from all the quotes' API pages
 ### 4. JSON‑LD Extraction
 Write a function def extract_jsonld(url): that pulls quotes from embedded JSON‑LD on a page
+### 5. Login & Scrape
+Write a function def login_and_scrape(login_url, user, pwd): that logs in and scrapes quotes visible only after authentication
