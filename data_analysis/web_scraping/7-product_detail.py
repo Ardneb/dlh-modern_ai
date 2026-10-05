@@ -27,7 +27,7 @@ def scrape_product_detail(url, delay=2.0):
     price = driver.find_element('css selector', 'h4.price').text
     description = driver.find_element('css selector', 'p.description').text
     rating = (len(driver.find_elements('css selector',
-                                       '.ratings p.ws-icon.ws-icon-star')))
+                                       '.ratings .ws-icon-star')))
 
     driver.quit()
 
