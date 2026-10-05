@@ -10,3 +10,5 @@ Write a function def scrape_via_api(base_url): that fetches quote data from all 
 Write a function def extract_jsonld(url): that pulls quotes from embedded JSON‑LD on a page
 ### 5. Login & Scrape
 Write a function def login_and_scrape(login_url, user, pwd): that logs in and scrapes quotes visible only after authentication
+### 6. Scrape Static Products
+Write a function def scrape_products(url): that opens a static product category page and returns a list of product dictionaries. Each dict should have
