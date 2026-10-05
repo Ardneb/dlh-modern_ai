@@ -21,7 +21,6 @@ def scroll_and_scrape(url, scroll_pause=2.0):
 
     driver = webdriver.Chrome(options=options)
     driver.get(url)
-    time.sleep(scroll_pause)
 
     last_height = driver.execute_script('return document.body.scrollHeight')
     while True:
