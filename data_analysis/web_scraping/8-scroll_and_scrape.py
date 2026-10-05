@@ -32,17 +32,22 @@ def scroll_and_scrape(url, scroll_pause=2.0):
             break
         last_height = new_height
 
+    titles = driver.find_elements('css selector', 'div.thumbnail a.title ')
+    prices = driver.find_elements('css selector', 'div.thumbnail h4.price')
+    descriptions = (driver.find_elements('css selector',
+                                         'div.thumbnail p.description'))
+    ratings = driver.find_elements('css selector', 'div.thumbnail .ratings')
+
     products = []
     seen = set()
-    product_cards = driver.find_elements('css selector', 'div.thumbnail')
 
-    for card in product_cards:
-        title = ((card.find_element('css selector',
-                                    'a.title').get_attribute('title')))
-        price = card.find_element('css selector', 'h4.price').text
-        description = card.find_element('css selector', 'p.description').text
-        rating = (len(card.find_elements('css selector',
-                                         '.ratings .ws-icon-star')))
+    for title_elem, price_elem, desc_elem, ratings in zip(
+      titles, prices, descriptions, ratings):
+        title = title_elem.get_attribute('title')
+        price = price_elem.text
+        description = desc_elem.text
+        rating = (len(ratings.find_elements('css selector',
+                                            '.ws-icon-star')))
 
         key = (title, price)
         if key not in seen:
