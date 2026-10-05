@@ -14,3 +14,5 @@ Write a function def login_and_scrape(login_url, user, pwd): that logs in and sc
 Write a function def scrape_products(url): that opens a static product category page and returns a list of product dictionaries. Each dict should have
 ### 7. Scrape Single Product Detail
 Write a function def scrape_product_detail(url, delay=2.0) that opens a detail page for one product, waits delay seconds, and returns a dictionary with
+### 8. Scroll & Scrape Products
+Write a function def scroll_and_scrape(url, scroll_pause=2.0): that scrolls and extracts all products from a JS‐rendered infinite‐scroll page
