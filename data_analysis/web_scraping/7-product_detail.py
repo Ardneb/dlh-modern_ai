@@ -23,7 +23,7 @@ def scrape_product_detail(url, delay=2.0):
     driver.get(url)
     time.sleep(delay)  # Wait for the page to load
 
-    title = driver.find_element('css selector', '.caption h4')[1].text
+    title = driver.find_elements('css selector', '.caption h4')[1].text
     price = driver.find_element('css selector', 'h4.price').text
     description = driver.find_element('css selector', 'p.description').text
     rating = (len(driver.find_element('css selector',
