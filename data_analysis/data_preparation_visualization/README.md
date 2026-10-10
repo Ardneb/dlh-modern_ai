@@ -4,3 +4,5 @@ Complete the following source code
 Write a function that visualizes missing values in a DataFrame
 ### 2. Changing Column Types
 Write a function that performs type conversion for specific columns
+### 3. Dropping vs Replacing vs Imputation
+Write a function that handles missing values in TotalCharges
