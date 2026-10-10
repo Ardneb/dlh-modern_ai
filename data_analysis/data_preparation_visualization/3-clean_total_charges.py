@@ -11,6 +11,8 @@ def clean_total_charges(df, method='drop'):
     'median': Fill with column median
     'impute': Replace with MonthlyCharges * tenure
     """
+    df = df.copy()
+
     if method == 'drop':
         df = df.dropna(subset=['TotalCharges'])
     elif method == 'median':
