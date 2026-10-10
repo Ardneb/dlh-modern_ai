@@ -8,3 +8,5 @@ Write a function that performs type conversion for specific columns
 Write a function that handles missing values in TotalCharges
 ### 4. Removing Duplicates
 Write a function that removes duplicate rows
+### 5. Initial Dropping
+Write a function that removes the customerID column since unique identifiers lack predictive value
