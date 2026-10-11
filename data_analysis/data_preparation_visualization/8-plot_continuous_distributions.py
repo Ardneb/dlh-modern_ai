@@ -10,7 +10,8 @@ def plot_continuous_distributions(df, columns_to_plot=None):
     function plotting continuous feature distributions
     """
     if columns_to_plot is None:
-        columns_to_plot = df.select_dtypes(include=[np.number]).columns.tolist()
+        columns_to_plot = df.select_dtypes(
+            include=[np.number]).columns.tolist()
     else:
         columns_to_plot = list(columns_to_plot)
 
@@ -27,13 +28,22 @@ def plot_continuous_distributions(df, columns_to_plot=None):
         data = df[col].dropna()
 
         axes[i, 0].hist(
-            data, bins=30, density=True, alpha=0.7, edgecolor='black'
+            data,
+            bins=30,
+            density=True,
+            alpha=0.7,
+            edgecolor='black'
         )
 
         if len(data) > 1 and data.nunique() > 1:
             kde = stats.gaussian_kde(data)
             x_range = np.linspace(data.min(), data.max(), 200)
-            axes[i, 0].plot(x_range, kde(x_range), color='red')
+            axes[i, 0].plot(
+                x_range,
+                kde(x_range),
+                color='red',
+                linestyle='--'
+            )
 
         axes[i, 0].set_title(f"{col} Histogram + KDE")
 
