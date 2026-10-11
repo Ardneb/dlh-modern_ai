@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def plot_categorical_vs_churn(df, col):
     """ Visualizes churn rates per category in a DataFrame"""
-    plt.figure(figsize=(12, 9))
+    plt.figure(figsize=(12, 8))
     churn_rate = (df['Churn'] == 'Yes').groupby(df[col]).mean()
     plt.bar(churn_rate.index.astype(str), churn_rate.values)
     plt.title(f"Churn Rate by {col}")
