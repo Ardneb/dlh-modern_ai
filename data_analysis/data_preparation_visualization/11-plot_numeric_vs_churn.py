@@ -14,7 +14,6 @@ def plot_numeric_vs_churn(df, col):
     plt.hist([churn_no, churn_yes], bins=30, label=['No', 'Yes'])
     plt.title(f"{col} Distribution by Churn")
     plt.xlabel(col)
-    plt.ylabel("Count")
     plt.legend(title="Churn")
     plt.tight_layout
     plt.show()
