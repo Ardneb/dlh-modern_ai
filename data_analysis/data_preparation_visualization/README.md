@@ -16,3 +16,5 @@ Write a function that visualizes churn class distribution
 Write a function that visualizes categorical feature distributions
 ### 8. Plot Continuous Distributions
 Write a function that visualizes the distributions of continuous numerical features
+### 9. Plot Correlation Heatmap
+Write a function that visualizes correlations between continuous numeric features using seaborn
