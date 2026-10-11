@@ -12,3 +12,5 @@ Write a function that removes duplicate rows
 Write a function that removes the customerID column since unique identifiers lack predictive value
 ### 6. Plot Target Distribution
 Write a function that visualizes churn class distribution
+### 7. Plot Categorical Distributions
+Write a function that visualizes categorical feature distributions
