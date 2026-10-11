@@ -14,3 +14,5 @@ Write a function that removes the customerID column since unique identifiers lac
 Write a function that visualizes churn class distribution
 ### 7. Plot Categorical Distributions
 Write a function that visualizes categorical feature distributions
+### 8. Plot Continuous Distributions
+Write a function that visualizes the distributions of continuous numerical features
