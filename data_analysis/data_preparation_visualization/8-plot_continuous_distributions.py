@@ -10,7 +10,9 @@ def plot_continuous_distributions(df, columns_to_plot=None):
     function plotting continuous feature distributions
     """
     if columns_to_plot is None:
-        columns_to_plot = df.select_dtypes(include=[np.number]).columns
+        columns_to_plot = df.select_dtypes(include=[np.number]).columns.tolist()
+    else:
+        columns_to_plot = list(columns_to_plot)
 
     n_cols = len(columns_to_plot)
     if n_cols == 0:
