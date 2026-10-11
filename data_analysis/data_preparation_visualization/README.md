@@ -10,3 +10,5 @@ Write a function that handles missing values in TotalCharges
 Write a function that removes duplicate rows
 ### 5. Initial Dropping
 Write a function that removes the customerID column since unique identifiers lack predictive value
+### 6. Plot Target Distribution
+Write a function that visualizes churn class distribution
