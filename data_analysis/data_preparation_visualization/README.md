@@ -20,3 +20,7 @@ Write a function that visualizes the distributions of continuous numerical featu
 Write a function that visualizes correlations between continuous numeric features using seaborn
 ### 10. Plot Categorical vs vs Churn
 Write a function that visualizes churn rates per category
+### 11. Plot Numeric vs Churn
+Write a function that compares continuous numeric feature distributions by churn
+### 12. 12. Chi-Square
+Write a function def chi_square_tests(df): that performs chi-square tests for categorical features, using SciPy
