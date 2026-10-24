@@ -24,3 +24,5 @@ Write a function that visualizes churn rates per category
 Write a function that compares continuous numeric feature distributions by churn
 ### 12. 12. Chi-Square
 Write a function def chi_square_tests(df): that performs chi-square tests for categorical features, using SciPy
+### 13. Welch's t-tests
+Write a function def ttest_numeric(df): that performs Welch's t-tests for continuous numeric features using scipy
