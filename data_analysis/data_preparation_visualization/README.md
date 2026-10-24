@@ -32,3 +32,5 @@ Write a function def create_features(df): that engineers new features from the d
 Write a function def encode_features(df): that encodes features for modeling using Scikit-learn
 ### 16. Feature Scaling
 Write a function def scale_numeric(df): that standardizes numeric columns
+### 17. Data Splitting
+Write a function def split_data(df, target='Churn', test_size=0.2, random_state=42): that splits data into train/test sets
