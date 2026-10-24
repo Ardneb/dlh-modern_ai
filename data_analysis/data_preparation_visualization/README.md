@@ -26,3 +26,5 @@ Write a function that compares continuous numeric feature distributions by churn
 Write a function def chi_square_tests(df): that performs chi-square tests for categorical features, using SciPy
 ### 13. Welch's t-tests
 Write a function def ttest_numeric(df): that performs Welch's t-tests for continuous numeric features using scipy
+### 14. Binning and Feature Creation
+Write a function def create_features(df): that engineers new features from the dataset
