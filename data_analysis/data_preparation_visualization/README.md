@@ -30,3 +30,5 @@ Write a function def ttest_numeric(df): that performs Welch's t-tests for contin
 Write a function def create_features(df): that engineers new features from the dataset
 ### 15. Encode features
 Write a function def encode_features(df): that encodes features for modeling using Scikit-learn
+### 16. Feature Scaling
+Write a function def scale_numeric(df): that standardizes numeric columns
