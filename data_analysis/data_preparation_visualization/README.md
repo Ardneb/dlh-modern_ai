@@ -28,3 +28,5 @@ Write a function def chi_square_tests(df): that performs chi-square tests for ca
 Write a function def ttest_numeric(df): that performs Welch's t-tests for continuous numeric features using scipy
 ### 14. Binning and Feature Creation
 Write a function def create_features(df): that engineers new features from the dataset
+### 15. Encode features
+Write a function def encode_features(df): that encodes features for modeling using Scikit-learn
