@@ -38,6 +38,7 @@ def encode_features(df):
 
     oe_tenure = preprocessing.OrdinalEncoder()
     if 'TenureGroup' in df.columns:
-        df[['TenureGroup']] = oe_tenure.fit_transform(df[['TenureGroup']])
+        df['TenureGroup'] = oe_tenure.fit_transform(
+            df[['TenureGroup']]).astype(int).ravel()
 
     return df, le_churn, oe_binary, oe_tenure
