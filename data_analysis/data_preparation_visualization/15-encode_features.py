@@ -19,13 +19,14 @@ def encode_features(df):
     if 'Churn' in df.columns:
         df['Churn'] = le_churn.fit_transform(df['Churn'])
 
-    binary_cols = ['Partner', 'Dependents',
-                   'PaperlessBilling', 'SeniorCitizen']
-    existing_binary = [col for col in binary_cols if col in df.columns]
-    oe_binary = preprocessing.OrdinalEncoder()
+    binary_cols = [
+            'Partner', 'Dependents', 'PaperlessBilling', 'SeniorCitizen'
+        ]
+    oe_binary = preprocessing.OrdinalEncoder(categories=[['No', 'Yes']])
 
-    if existing_binary:
-        df[existing_binary] = oe_binary.fit_transform(df[existing_binary])
+    for col in binary_cols:
+        if col in df.columns:
+            df[col] = oe_binary.fit_transform(df[[col]]).astype(int).ravel()
 
     ohe_cols = ['Contract', 'PaymentMethod']
     existing_ohe = [col for col in ohe_cols if col in df.columns]
