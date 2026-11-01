@@ -6,7 +6,7 @@ model using Scikit-learn on tabular data
 from sklearn import cluster
 
 
-def K_MEANS(X, n_clusters, random_state):
+def K_Means(X, n_clusters, random_state):
     """
     Creates and fits a K-Means clustering model
     on tabular data by grouping the data into
