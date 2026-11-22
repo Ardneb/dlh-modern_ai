@@ -18,3 +18,5 @@ Write a function prune_and_evaluate_trees(X_train, y_train, X_test, y_test, ccp_
 Write a function get_best_alpha(clfs, train_scores, test_scores, ccp_alphas) that selects the best pruning value ccp_alpha for a set of trained decision trees
 ### 9. Random Forest Classifier
 Write a function random_forest(n_estimators, random_state) to create a random forest classifier using Scikit-learn
+### 10. Feature Importance with Random Forest
+Write a function feature_importance(rf) that computes and returns the feature importances from a trained random forest model
