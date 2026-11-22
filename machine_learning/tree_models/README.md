@@ -16,3 +16,5 @@ Write a function get_pruning_path(clf, X, y) that retrieves the cost-complexity 
 Write a function prune_and_evaluate_trees(X_train, y_train, X_test, y_test, ccp_alphas, random_state, min_samples_leaf, min_samples_split) that trains multiple decision tree classifiers over a range of cost-complexity pruning parameters (ccp_alpha) and evaluates their performance
 ### 8. (Post-Pruning) Best ccp_alpha for Pruning
 Write a function get_best_alpha(clfs, train_scores, test_scores, ccp_alphas) that selects the best pruning value ccp_alpha for a set of trained decision trees
+### 9. Random Forest Classifier
+Write a function random_forest(n_estimators, random_state) to create a random forest classifier using Scikit-learn
