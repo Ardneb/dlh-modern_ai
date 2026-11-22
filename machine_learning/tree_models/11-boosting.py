@@ -17,7 +17,7 @@ def compare_boosting_classifiers(name, n_estimators, random_state):
             n_estimators=n_estimators,
             random_state=random_state
         )
-    elif name == 'gradient_boosting':
+    elif name == 'gradientboosting':
         return ensemble.GradientBoostingClassifier(
             n_estimators=n_estimators,
             random_state=random_state
