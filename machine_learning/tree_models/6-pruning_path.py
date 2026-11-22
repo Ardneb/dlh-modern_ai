@@ -11,4 +11,4 @@ def get_pruning_path(clf, X, y):
     for a given decision tree classifier.
     """
     path = clf.cost_complexity_pruning_path(X, y)
-    return path.cpp_alphas, path.impurities
+    return path.ccp_alphas, path.impurities
