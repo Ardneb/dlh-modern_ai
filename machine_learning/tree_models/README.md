@@ -10,3 +10,5 @@ Write a function generate_predictions(clf, X) to generate predictions from a tra
 Write a function evaluate(true_labels, predicted_labels, class_names) that generates a detailed classification report using Scikit-learn
 ### 5. Pre-Pruning
 Write a function prepruning(X, y, clf) that uses Scikit-learn to perform a Grid Search for the best pre-pruning hyperparameters for a decision tree classifier
+### 6. (Post-Pruning) Retrieve the Pruning Path of a Decision Tree
+Write a function get_pruning_path(clf, X, y) that retrieves the cost-complexity pruning path for a given decision tree classifier
