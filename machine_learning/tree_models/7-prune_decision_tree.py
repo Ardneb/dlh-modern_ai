@@ -27,7 +27,7 @@ def prune_and_evaluate_trees(
     test_scores = []
 
     for alpha in ccp_alphas:
-        clf = train.DecisionTreeClassifier(
+        clf = tree.DecisionTreeClassifier(
             random_state=random_state,
             min_samples_leaf=min_samples_leaf,
             min_samples_split=min_samples_split,
