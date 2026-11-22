@@ -20,3 +20,5 @@ Write a function get_best_alpha(clfs, train_scores, test_scores, ccp_alphas) tha
 Write a function random_forest(n_estimators, random_state) to create a random forest classifier using Scikit-learn
 ### 10. Feature Importance with Random Forest
 Write a function feature_importance(rf) that computes and returns the feature importances from a trained random forest model
+### 11. Boosting
+Write a function compare_boosting_classifiers(name, n_estimators, random_state) that initializes and returns an untrained boosting classifier based on the specified algorithm name
