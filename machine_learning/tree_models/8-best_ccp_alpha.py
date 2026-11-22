@@ -5,7 +5,7 @@ ccp_alpha for a set of trained decision trees
 """
 
 
-def random_forest(n_estimators, random_state):
+def get_best_alpha(clfs, train_scores, test_scores, ccp_alphas):
     """
     Returns a random forest classifier with the specified number of estimators
     and random state
