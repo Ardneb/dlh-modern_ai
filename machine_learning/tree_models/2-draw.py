@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Function displays the textual structure of a 
+Function displays the textual structure of a
 trained decision tree classifier using Scikit-learn
 """
+
+from sklearn import tree
 
 
 def draw(clf, feature_names, class_names):
